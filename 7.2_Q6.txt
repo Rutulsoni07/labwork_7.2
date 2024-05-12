@@ -1,0 +1,31 @@
+Q.6 Write a Program to print the below pattern using nested for loop.
+5 4 3 2 1
+   5 4 3 2
+      5 4 3
+         5 4
+            5
+
+input=
+
+#include <stdio.h>
+int main() {
+int i,l,k;
+   for (i=1;i<=5;i++) {
+     for(l=i;l>=1;l--){
+printf(" ");
+}
+      for (l=5;l>=i;l--) {
+printf("%d", l);
+}
+printf("\n");
+}
+
+    return 0;
+}
+
+output=
+ 54321
+  5432
+   543
+    54
+     5

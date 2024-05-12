@@ -1,0 +1,30 @@
+Q.1 Write a Program to print the below pattern using nested for loop.
+            1
+         2 1
+      3 2 1
+   4 3 2 1
+5 4 3 2 1
+input=
+#include <stdio.h>
+
+int main() {
+   for(int i=5;i>=1;i--){
+       for(int k=5;k>=1;k--){
+           if(i+k<=6){
+               printf("%d",k);
+           }else{
+               printf(" ");
+           }
+           
+       }
+       printf("\n");
+   }
+
+    return 0;
+}
+output=
+    1
+   21
+  321
+ 4321
+54321
